@@ -1,0 +1,291 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+
+#header {
+  text-align: center;
+  font-size: 15px;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 5px;
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #header {
+    display: none;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 480px) {
+  #header {
+    display: none;
+  }
+}
+
+
+/* container */
+
+#container {
+  width: 75%;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  gap: 50px;
+}
+
+/* left */
+
+.left {
+  width: 100%;
+}
+
+.left h1 {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+  border-bottom: 1px solid;
+}
+
+.delivery {
+  background-color: #eff0f0;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.cart {
+  border-top: 1px dashed #4e4a4b;
+  margin-top: 20px;
+}
+
+.product {
+  display: flex;
+  border-bottom: 1px solid #4e4a4b;
+}
+
+.productImg {
+  width: 28%;
+}
+
+.productDec {
+  width: 69%;
+  padding-top: 20px;
+  margin-right: 8px;
+}
+
+.productDec h3 {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+}
+
+.price {
+  margin-top: 5px;
+}
+
+.deleteProduct {
+  width: 3%;
+  padding-top: 20px;
+}
+
+.productImg img {
+  width: 100%;
+}
+
+/* right */
+
+.right {
+  width: 100%;
+}
+
+.checkout {
+  padding: 20px;
+  background-color: #eff0f0;
+}
+
+.checkout button{
+  padding: 13px;
+  width: 100%;
+  background-color: #f64c64;
+  color: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+h2 {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+}
+
+.right h2 {
+  border-bottom: 1px solid;
+  margin-top: 20px;
+}
+
+.summary div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtotal {
+  margin-top: 20px;
+}
+
+.shipping {
+  margin-top: 6px;
+}
+
+.info {
+  border: 1px solid rgb(110, 109, 109);
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 13px;
+  color: rgb(110, 109, 109);
+}
+
+.total {
+  margin-top: 6px;
+}
+
+.offer {
+  margin-top: 25px;
+  background-color: #eff0f0;
+  padding: 25px;
+}
+
+.code {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 5px;
+}
+
+.code input {
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #221f20;
+  border-radius: 0px;
+}
+
+.code button {
+  padding: 8px 30px;
+  background-color: #221f20;
+  color: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #221f20;
+}
+
+.offer p {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+
+@media all and (min-width: 481px) and (max-width: 900px) {
+  #container {
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 480px) {
+  #container {
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .product {
+    padding-bottom: 10px;
+  }
+
+  .productImg {
+    padding-top: 10px;
+  }
+
+  .productDec {
+    padding-top: 10px;
+  }
+
+  .code {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #221f20;
+  color: #ffffff80;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#footerMain {
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+}
+
+#footerBottom {
+  text-align: center;
+  padding: 5px;
+  border-top: 1px solid #ffffff80;
+}
+
+footer p:hover {
+  color: #f2f2f2;
+}
+
+.white {
+  color: #f2f2f2;
+}
+
+.social {
+  color: #f2f2f2;
+}
+
+.social div {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #footerMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding-top: 40px;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 480px) {
+  #footerMain {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    padding-top: 30px;
+  }
+}

@@ -1,0 +1,319 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+
+#header {
+  text-align: center;
+  font-size: 15px;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 5px;
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #header {
+    display: none;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 480px) {
+  #header {
+    display: none;
+  }
+}
+
+/* container */
+
+#container {
+  width: 75%;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  gap: 30px;
+}
+
+/* left */
+
+.left {
+  width: 100%;
+}
+
+.left h1 {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+  border-bottom: 1px solid;
+}
+
+.left h3 {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+}
+
+.method p {
+  font-size: 14px;
+  background-color: #eff0f0;
+  padding: 5px;
+}
+
+.method h3 {
+  margin-top: 15px;
+}
+
+.choose {
+  margin-top: 10px;
+}
+
+.address {
+  margin-top: 30px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+.address h3 {
+  margin-bottom: 10px;
+}
+
+.continue {
+  margin-top: 30px;
+  padding: 10px 50px;
+  background-color: #221f20;
+  color: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.continue:hover {
+  background-color: black;
+}
+
+/* right */
+
+.right {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+}
+
+.right h2 {
+  border-bottom: 1px solid;
+}
+
+.summary {
+  background-color: #eff0f0;
+  padding: 25px;
+}
+
+.summary div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtotal {
+  margin-top: 20px;
+}
+
+.shipping {
+  margin-top: 6px;
+}
+
+.total {
+  margin-top: 6px;
+}
+
+.offer {
+  margin-top: 10px;
+  background-color: #eff0f0;
+  padding: 25px;
+}
+
+.code {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 5px;
+}
+
+.code input {
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #221f20;
+  border-radius: 0px;
+}
+
+.code button {
+  padding: 8px 30px;
+  background-color: #f64c64;
+  color: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #f64c64;
+}
+
+.offer p {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+/* accordion */
+
+.cod {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.cod:hover {
+  background-color: #ccc;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 10px 15px 20px 0px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.panel input {
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #221f20;
+  border-radius: 0px;
+  width: 100%;
+}
+
+.dateCvv {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.dateCvv div {
+  width: 100%;
+}
+
+.dateCvv div input {
+  width: 100%;
+}
+
+
+@media all and (min-width: 481px) and (max-width: 900px) {
+  #container {
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 480px) {
+  #container {
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .continue {
+    width: 100%;
+  }
+
+  .code {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #221f20;
+  color: #ffffff80;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#footerMain {
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+}
+
+#footerBottom {
+  text-align: center;
+  padding: 5px;
+  border-top: 1px solid #ffffff80;
+}
+
+footer p:hover {
+  color: #f2f2f2;
+}
+
+.white {
+  color: #f2f2f2;
+}
+
+.social {
+  color: #f2f2f2;
+}
+
+.social div {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #footerMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding-top: 40px;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 480px) {
+  #footerMain {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    padding-top: 30px;
+  }
+}
