@@ -7,6 +7,7 @@ const { authenticate } = require("./middleware/authenticate.middleware");
 const { bestsellerRoute } = require("./routes/bestseller.route");
 const { makeupRoute } = require("./routes/makeup.route");
 const { skinRoute } = require("./routes/skin.route");
+const { cartRoute } = require("./routes/cart.route");
 
 const app = express();
 app.use(express.json());
@@ -21,7 +22,8 @@ app.use("/user",routes)
 app.use("/bestseller",bestsellerRoute);
 app.use("/makeup",makeupRoute)
 app.use("/skin",skinRoute);
-app.use(authenticate)
+app.use(authenticate);
+app.use("/cart",cartRoute);
 app.listen(process.env.port,async()=>{
     try{
         await connection
@@ -32,3 +34,4 @@ app.listen(process.env.port,async()=>{
     }
     console.log(`connected to port ${process.env.port} successfully`)
 })
+
